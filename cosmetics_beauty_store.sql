@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 22, 2024 at 03:56 AM
+-- Generation Time: Apr 25, 2024 at 03:29 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -53,21 +53,22 @@ CREATE TABLE `product` (
   `user_id` int DEFAULT NULL,
   `fname` varchar(100) NOT NULL,
   `lname` varchar(100) NOT NULL,
+  `address` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci DEFAULT NULL,
+  `phone_num` varchar(11) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `product` varchar(100) NOT NULL,
   `qty` varchar(100) NOT NULL,
   `date` timestamp NULL DEFAULT NULL,
   `price` varchar(100) DEFAULT NULL,
   `total_amount` varchar(100) DEFAULT NULL,
-  `product_arrival` date DEFAULT NULL,
-  `address` varchar(100) DEFAULT NULL
+  `product_arrival` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `user_id`, `fname`, `lname`, `product`, `qty`, `date`, `price`, `total_amount`, `product_arrival`, `address`) VALUES
-(13, NULL, 'Chevy Love', 'saja', 'FLOWER Beauty Blush Bomb - Bubbly', '13', '2024-04-21 16:00:00', '80.99', '1052.87', '2024-04-29', 'banday');
+INSERT INTO `product` (`id`, `user_id`, `fname`, `lname`, `address`, `phone_num`, `product`, `qty`, `date`, `price`, `total_amount`, `product_arrival`) VALUES
+(15, NULL, 'Chevy Love', 'saja', 'banday', '09559104459', '12pcs Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss Beauty√', '23', '2024-04-16 16:00:00', '29.99', '689.77', '2024-04-24');
 
 -- --------------------------------------------------------
 
@@ -126,7 +127,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
