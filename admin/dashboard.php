@@ -86,8 +86,8 @@
                 </li>
              
                  <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Orders</a></li>
+                <li><a href="product.php">Products</a></li>
+                <li><a href="index.php">Orders</a></li>
                 <li><a href="#">Customers</a></li>
                 <li><a href="../auth/login.php">logout</a></li>
             </ul>

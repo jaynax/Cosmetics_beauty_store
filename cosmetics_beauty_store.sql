@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.11
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Apr 14, 2024 at 10:30 PM
+-- Generation Time: Apr 22, 2024 at 03:56 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -46,34 +45,29 @@ INSERT INTO `admin` (`id`, `username`, `password`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `cart`
---
-
-CREATE TABLE `cart` (
-  `id` int NOT NULL,
-  `fullname` varchar(100) NOT NULL,
-  `address` varchar(100) NOT NULL,
-  `product` varchar(100) NOT NULL,
-  `date_recorded` timestamp NOT NULL,
-  `arrival` date NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `product`
 --
 
 CREATE TABLE `product` (
   `id` int NOT NULL,
+  `user_id` int DEFAULT NULL,
   `fname` varchar(100) NOT NULL,
   `lname` varchar(100) NOT NULL,
   `product` varchar(100) NOT NULL,
   `qty` varchar(100) NOT NULL,
   `date` timestamp NULL DEFAULT NULL,
   `price` varchar(100) DEFAULT NULL,
-  `total_amount` varchar(100) DEFAULT NULL
+  `total_amount` varchar(100) DEFAULT NULL,
+  `product_arrival` date DEFAULT NULL,
+  `address` varchar(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `user_id`, `fname`, `lname`, `product`, `qty`, `date`, `price`, `total_amount`, `product_arrival`, `address`) VALUES
+(13, NULL, 'Chevy Love', 'saja', 'FLOWER Beauty Blush Bomb - Bubbly', '13', '2024-04-21 16:00:00', '80.99', '1052.87', '2024-04-29', 'banday');
 
 -- --------------------------------------------------------
 
@@ -106,16 +100,11 @@ ALTER TABLE `admin`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `cart`
---
-ALTER TABLE `cart`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `product`
 --
 ALTER TABLE `product`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `fk_user_id` (`user_id`);
 
 --
 -- Indexes for table `users`
@@ -134,22 +123,32 @@ ALTER TABLE `admin`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `cart`
---
-ALTER TABLE `cart`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT;
-
---
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `product`
+--
+ALTER TABLE `product`
+  ADD CONSTRAINT `fk_user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`);
+
+--
+-- Constraints for table `users`
+--
+ALTER TABLE `users`
+  ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`id`) REFERENCES `admin` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
