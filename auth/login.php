@@ -1,26 +1,48 @@
 <?php
-    session_start();
-    require_once('../config.php');
+session_start();
+require_once('../config.php');
 
-    if ($_SERVER['REQUEST_METHOD'] == "POST") {
-       $username = $_POST['username'] ? $_POST['username'] : '';
-        $address = $_POST['address'] ? $_POST['address'] : '';
-        $password = hash('md5', $_POST['password']) ? $_POST['password'] : '';
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    // Validate and sanitize user input
+    $id = isset($_POST['id']) ? intval($_POST['id']) : 0; // Assuming 'id' is an integer
+    $password = isset($_POST['password']) ? $_POST['password'] : '';
 
-        $sqlquery = "SELECT * FROM Users WHERE username='$username' AND address='$address' AND password='$password'";
+    if ($id <= 0 || empty($password)) {
+        $errmsg = 'Invalid ID or Password.';
+    } else {
+        // Fetch customer by ID from the database
+        $sqlquery = "SELECT id, username, password FROM customers WHERE id = ?";
+        $stmt = mysqli_prepare($conn, $sqlquery);
 
-        $result = mysqli_query($conn, $sqlquery);
+        if ($stmt) {
+            mysqli_stmt_bind_param($stmt, "i", $id);
+            mysqli_stmt_execute($stmt);
+            $result = mysqli_stmt_get_result($stmt);
 
-        if ($result && mysqli_num_rows($result) > 0) {
-            $user = mysqli_fetch_assoc($result);
-            $_SESSION['isLogin'] = $user['id'];
-            header('Location: ../home.php');
-            exit();
+            if ($result && mysqli_num_rows($result) > 0) {
+                $customer = mysqli_fetch_assoc($result);
+                $hashed_password = $customer['password'];
+
+                // Verify hashed password
+                if (md5($password) === $hashed_password) {
+                    $_SESSION['isLogin'] = $customer['id'];
+                    header('Location: ../home.php');
+                    exit();
+                } else {
+                    $errmsg = 'Username or Password is invalid!';
+                }
+            } else {
+                $errmsg = 'Customer not found!';
+            }
+
+            mysqli_stmt_close($stmt);
         } else {
-            $errmsg = 'Username or Address or Password is invalid!';
+            $errmsg = 'Database query error.';
         }
     }
+}
 ?>
+
 
 <!DOCTYPE html>
 <html>
@@ -53,16 +75,18 @@
                                 echo '<div class="alert alert-danger" role="alert">' . $errmsg . '</div>';
                             }
                         ?>
-                        <form action="" method="POST" id="loginForm">
+                          <form action="" method="POST" id="loginForm">
+                            <div class="form-floating">
+                                <input type="id" class="form-control" name="id" id="floatingInput" placeholder="name@example.com" required>
+                                <label for="floatingInput">ID</label>
+                            </div>
+
+                        <form class="form-floating mt-3">
                             <div class="form-floating">
                                 <input type="text" class="form-control" name="username" id="floatingInput" placeholder="name@example.com" required>
                                 <label for="floatingInput">Username</label>
                             </div>
-                            <form action="" method="POST" id="loginForm">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" name="address" id="floatingInput" placeholder="name@example.com" required>
-                                <label for="floatingInput">Address</label>
-                            </div>
+                            
 
                             <div class="form-floating mt-3">
                                 <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>

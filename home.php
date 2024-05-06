@@ -87,7 +87,7 @@
         <a href="#">Home</a>
         <a href="#">Skincare</a>
         <a href="#">Makeup</a>
-        <a href="#">Haircare</a>
+        <a href="order_info.php">Order Receipt</a>
         <a href="cart.php">Cart</a>
         <a href="Contact.php">Contact</a>
         <a href="index.php">Logout</a>
@@ -96,100 +96,110 @@
     <div class="banner">
         <h2 style="color: black; ">Welcome to Our Beauty Store</h2>
     </div>
-
-    <div class="featured-products">
+  <div class="featured-products">
+        <!-- Product 1 -->
         <div class="product">
             <img src="img/beauty_1.jpg" alt="Product 1">
-            <h3>
-Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph</h3>
-            <p>$19.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p>Product ID: 1</p>
+            <h3>Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph</h3>
+            <p>₱19.99</p>
+            <a href="add_cart.php?id=1&product=Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph&price=19.99"><button>ADD TO CART</button></a>
         </div>
 
+        <!-- Product 2 -->
         <div class="product">
             <img src="img/Lipstick.jpg" alt="Product 2">
+            <p>Product ID: 2</p>
             <h3>12pcs Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss Beauty√</h3>
-            <p>$29.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p>₱29.99</p>
+            <a href="add_cart.php?id=2&product=12pcs Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss Beauty√&price=29.99"><button>ADD TO CART</button></a>
         </div>
 
         <div class="product">
             <img src="img/makeup.jpg" alt="Product 3">
+            <p>Product ID: 3</p>
             <h3>24Pc Makeup Set Kit for Women Makeup Gift Lip Gloss Concealer Eyeshadow Palette</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
          <div class="product">
             <img src="img/eye.jpg" alt="Product 3">
+            <p>Product ID: 4</p>
             <h3>Maybelline New York Sky High Mascara
 </h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
         <div class="product">
             <img src="img/blush.jpg" alt="Product 3">
+            <p>Product ID: 5</p>
             <h3>FLOWER Beauty Blush Bomb - Bubbly</h3>
-            <p>$11.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱11.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
            <div class="product">
             <img src="img/cream.jpg" alt="Product 3">
+            <p>Product ID: 6</p>
             <h3>Anti-Aging Cream</h3>
-            <p>$70.00</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱70.00</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
         <div class="product">
             <img src="img/blush1.jpg" alt="Product 3">
+            <p>Product ID: 7</p>
             <h3>e.l.f Monochromatic Multi-Stick</h3>
-            <p>$10.00</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱10.00</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
         <div class="product">
             <img src="img/nail.jpg" alt="Product 3">
+            <p>Product ID: 8</p>
             <h3>MI FASHION 3D Shine Long Lasting Nail Polish Set Combo 15ml Each Pink, Wine Maroon, Tomato Red, Magenta (Pack of 4)</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
         <div class="product">
             <img src="img/sunscreen.jpg" alt="Product 3">
+            <p>Product ID: 9</p>
             <h3>Lotus Herbals Safe Sun Invisible Matte Gel Sunscreen SPF 50 PA+++ , For Men & Women, Non-Greasy, Suitable for Oily Skin, 100g,Orange</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
         <div class="product">
             <img src="product3.jpg" alt="Product 3">
+            <p>Product ID: 10</p>
             <h3>Product 3</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div><div class="product">
             <img src="product3.jpg" alt="Product 3">
             <h3>Product 3</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
 
         <div class="product">
             <img src="product3.jpg" alt="Product 3">
             <h3>Product 3</h3>
-            <p>$24.99</p>
-        <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+        <button><a href="create.php">ADD TO CART</a></button>
         </div><div class="product">
             <img src="product3.jpg" alt="Product 3">
             <h3>Product 3</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
         <div class="product">
             <img src="product3.jpg" alt="Product 3">
             <h3>Product 3</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
         </div>
         <div class="product">
             <img src="product3.jpg" alt="Product 3">
             <h3>Product 3</h3>
-            <p>$24.99</p>
-            <button><a href="create.php">BUY</a></button> 
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button> 
         </div>
     </div>
 
