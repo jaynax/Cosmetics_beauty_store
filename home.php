@@ -85,12 +85,22 @@
     </header>
 
     <nav>
+<<<<<<< HEAD
         <a href="#" style="color: white; font-family: cambria math, cambria, sans-serif;">Home</a>
         
         <a href="order_info.php" style="color: white; font-family: cambria math, cambria, sans-serif;">Order History</a>
         <a href="cart.php" style="color: white; font-family: cambria math, cambria, sans-serif;">Cart</a>
         <a href="contact.php" style="color: white; font-family: cambria math, cambria, sans-serif;">Concern</a>
         <a href="index.php"style="color: white; font-family: cambria math, cambria, sans-serif;">Logout</a>
+=======
+        <a href="#">Home</a>
+        <a href="#">Skincare</a>
+        <a href="#">Makeup</a>
+        <a href="order_info.php">Order Receipt</a>
+        <a href="cart.php">Cart</a>
+        <a href="Contact.php">Contact</a>
+        <a href="index.php">Logout</a>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
     </nav>
 
     <div class="banner">
@@ -101,66 +111,116 @@
         <div class="product">
             <img src="img/beauty_1.jpg" alt="Product 1">
             <p>Product ID: 1</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph</h3>
+=======
+            <h3>Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph</h3>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
             <p>₱19.99</p>
             <a href="add_cart.php?id=1&product=Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph&price=19.99"><button>ADD TO CART</button></a>
         </div>
 
         <!-- Product 2 -->
         <div class="product">
+<<<<<<< HEAD
             <img src="img/g.jpg" alt="Product 2">
             <p>Product ID: 2</p>
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss</h3>
             <p>₱1,000.99</p>
             <a href="add_cart.php?id=2&product= Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss&price=29.99"><button>ADD TO CART</button></a>
+=======
+            <img src="img/Lipstick.jpg" alt="Product 2">
+            <p>Product ID: 2</p>
+            <h3>12pcs Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss Beauty√</h3>
+            <p>₱29.99</p>
+            <a href="add_cart.php?id=2&product=12pcs Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss Beauty√&price=29.99"><button>ADD TO CART</button></a>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
 
         <div class="product">
             <img src="img/makeup.jpg" alt="Product 3">
             <p>Product ID: 3</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">24Pc Makeup Set Kit for Women Makeup Gift Lip Gloss Concealer Eyeshadow Palette</h3>
             <p> ₱24.99</p>
             <a href="add_cart.php?id=3&product=24Pc Makeup Set Kit for Women Makeup Gift Lip Gloss Concealer Eyeshadow Palette&price=24.99"><button>ADD TO CART</button></a>
+=======
+            <h3>24Pc Makeup Set Kit for Women Makeup Gift Lip Gloss Concealer Eyeshadow Palette</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
          <div class="product">
             <img src="img/eye.jpg" alt="Product 3">
             <p>Product ID: 4</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Maybelline New York Sky High Mascara
 </h3>
             <p> ₱34.99</p>
            <a href="add_cart.php?id=4&product=Maybelline New York Sky High Mascara&price=34.99"><button>ADD TO CART</button></a>
+=======
+            <h3>Maybelline New York Sky High Mascara
+</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
         <div class="product">
             <img src="img/blush.jpg" alt="Product 3">
             <p>Product ID: 5</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">FLOWER Beauty Blush Bomb - Bubbly</h3>
             <p> ₱11.99</p>
              <a href="add_cart.php?id=5&product=FLOWER Beauty Blush Bomb - Bubbly&price=11.99"><button>ADD TO CART</button></a>
+=======
+            <h3>FLOWER Beauty Blush Bomb - Bubbly</h3>
+            <p> ₱11.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
            <div class="product">
             <img src="img/cream.jpg" alt="Product 3">
             <p>Product ID: 6</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Anti-Aging Cream</h3>
             <p> ₱70.00</p>
           <a href="add_cart.php?id=6&product=Anti-Aging Cream&price=70.00"><button>ADD TO CART</button></a>
+=======
+            <h3>Anti-Aging Cream</h3>
+            <p> ₱70.00</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
         <div class="product">
             <img src="img/blush1.jpg" alt="Product 3">
             <p>Product ID: 7</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">e.l.f Monochromatic Multi-Stick</h3>
             <p> ₱10.00</p>
               <a href="add_cart.php?id=7&product=e.l.f Monochromatic Multi-Stick&price=10.99"><button>ADD TO CART</button></a>
+=======
+            <h3>e.l.f Monochromatic Multi-Stick</h3>
+            <p> ₱10.00</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
         <div class="product">
             <img src="img/nail.jpg" alt="Product 3">
             <p>Product ID: 8</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">MI FASHION 3D Shine Long Lasting Nail Polish Set Combo 15ml Each Pink, Wine Maroon, Tomato Red, Magenta (Pack of 4)</h3>
             <p> ₱24.99</p>
             <a href="add_cart.php?id=8&product=MI FASHION 3D Shine Long Lasting Nail Polish Set Combo 15ml Each Pink, Wine Maroon, Tomato Red, Magenta (Pack of 4)&price=24.99"><button>ADD TO CART</button></a>
+=======
+            <h3>MI FASHION 3D Shine Long Lasting Nail Polish Set Combo 15ml Each Pink, Wine Maroon, Tomato Red, Magenta (Pack of 4)</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
         <div class="product">
             <img src="img/sunscreen.jpg" alt="Product 3">
             <p>Product ID: 9</p>
+<<<<<<< HEAD
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Lotus Herbals Safe Sun Invisible Matte Gel Sunscreen SPF 50 PA+++ , For Men & Women, Non-Greasy, Suitable for Oily Skin, 100g,Orange</h3>
             <p> ₱24.99</p>
              <a href="add_cart.php?id=9&product=Lotus Herbals Safe Sun Invisible Matte Gel Sunscreen SPF 50 PA+++ , For Men & Women, Non-Greasy, Suitable for Oily Skin, 100g,Orange&price=24.99"><button>ADD TO CART</button></a>
@@ -191,6 +251,47 @@
             <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Product 3</h3>
             <p> ₱24.99</p>
            <a href="add_cart.php?id=11&product=Essence Extreme Shine Volume Lip gloss&price=188.29"><button>ADD TO CART</button></a>
+=======
+            <h3>Lotus Herbals Safe Sun Invisible Matte Gel Sunscreen SPF 50 PA+++ , For Men & Women, Non-Greasy, Suitable for Oily Skin, 100g,Orange</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <p>Product ID: 10</p>
+            <h3>Product 3</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+        </div><div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+        </div>
+
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p> ₱24.99</p>
+        <button><a href="create.php">ADD TO CART</a></button>
+        </div><div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button>
+        </div>
+        <div class="product">
+            <img src="product3.jpg" alt="Product 3">
+            <h3>Product 3</h3>
+            <p> ₱24.99</p>
+            <button><a href="create.php">ADD TO CART</a></button> 
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         </div>
     </div>
 

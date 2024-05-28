@@ -108,6 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 echo '<div class="alert alert-danger" role="alert">' . $errmsg . '</div>';
                             }
                         ?>
+<<<<<<< HEAD
                         <form action="" method="POST" id="loginForm">
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" name="id" id="floatingId" placeholder="ID" required>
@@ -118,6 +119,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 <label for="floatingUsername">Username</label>
                             </div>
                             <div class="form-floating mb-3 position-relative">
+=======
+                          <form action="" method="POST" id="loginForm">
+                            <div class="form-floating">
+                                <input type="id" class="form-control" name="id" id="floatingInput" placeholder="name@example.com" required>
+                                <label for="floatingInput">ID</label>
+                            </div>
+
+                        <form class="form-floating mt-3">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" name="username" id="floatingInput" placeholder="name@example.com" required>
+                                <label for="floatingInput">Username</label>
+                            </div>
+                            
+
+                            <div class="form-floating mt-3">
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
                                 <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                                 <label for="floatingPassword">Password</label>
                                 <span class="toggle-password" onclick="togglePasswordVisibility()">&#128065;</span>

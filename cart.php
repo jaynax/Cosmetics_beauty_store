@@ -1,8 +1,11 @@
 <?php
 session_start();
 
+<<<<<<< HEAD
 include 'config.php';
 
+=======
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
 // Function to remove item from cart by product ID
 function removeFromCart($productId) {
     if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
@@ -35,7 +38,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete']) && isset($_P
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+<<<<<<< HEAD
             background: url('img/378483a28a563b9d5ab86019b09cbc87.jpg');
+=======
+            background-color: #f8f8f8;
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
         }
         header, nav {
             background-color: pink;
@@ -88,6 +95,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete']) && isset($_P
 <body>
 
 <header>
+<<<<<<< HEAD
     <h1 style="color: black; font-family: cambria math, cambria, sans-serif;">Shopping Cart</h1>
 </header>
 
@@ -131,6 +139,40 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['delete']) && isset($_P
     }
 
     mysqli_close($conn);
+=======
+    <h1>Shopping Cart</h1>
+</header>
+
+<nav>
+    <a href="home.php">Continue Shopping</a>
+</nav>
+
+<div class="cart-container">
+    <h2>Your Cart</h2>
+
+    <?php
+    if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
+        foreach ($_SESSION['cart'] as $item) {
+            echo "<div class='cart-item'>";
+            echo "<img src='img/beauty_1.jpg' alt='{$item['product']}'>";
+            echo "<p>Product ID: {$item['id']}</p>";
+            echo "<h3>{$item['product']}</h3>";
+            echo "<p>Price: ₱{$item['price']}</p>";
+            echo "<form class='delete-form' method='post'>";
+            echo "<input type='hidden' name='product_id' value='{$item['id']}'>";
+            echo "<button type='submit' name='delete'>Delete</button>";
+            echo "</form>";
+            echo "</div>";
+        }
+
+        // Display Buy button to proceed to create.php
+        echo "<form class='buy-form' method='get' action='create.php'>";
+        echo "<button type='submit'>Buy Items</button>";
+        echo "</form>";
+    } else {
+        echo "<p>Your cart is empty.</p>";
+    }
+>>>>>>> d362fed4d74955653d69e7a4463a46e1dbd8a8dd
     ?>
 </div>
 
