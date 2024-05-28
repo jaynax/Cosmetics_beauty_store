@@ -7,7 +7,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url(../img/22.jpg);
+            background-image: url(img/22.jpg);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -31,7 +31,7 @@
 </head>
 <body>
 <center>
-<h2>Customers Orders Information</h2>
+<h2>Order History Information</h2>
 </center>
 <table>
     <tr>
@@ -46,7 +46,7 @@
     
     <?php
     // Include your database configuration file
-    include "../config.php";
+    require 'config.php';
 
     // Fetch products from the database
     $sql = "SELECT * FROM order_info";

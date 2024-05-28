@@ -85,10 +85,11 @@
                        <h1 style="padding-left: 5px;">COSMETICS</h1>
                 </li>
              
-                 <li><a href="#">Dashboard</a></li>
+                 <li><a href="dashboard.php">Dashboard</a></li>
                 <li><a href="product.php">Products</a></li>
                 <li><a href="index.php">Orders</a></li>
-                <li><a href="#">Customers</a></li>
+                <li><a href="customers.php">Customers</a></li>
+                 <li><a href="customer_concerns.php">Customers Concern/Comments</a></li>
                 <li><a href="../auth/login.php">logout</a></li>
             </ul>
         </nav>

@@ -31,25 +31,21 @@
 </head>
 <body>
 <center>
-<h2>Customers Orders Information</h2>
+<h2>Customer Concerns/Comments</h2>
 </center>
 <table>
     <tr>
         <th>Customer ID</th>
-        <th>PRODUCT ID</th>
-        <th>Quantity</th>
-        <th>Date Order</th>
-        <th>Date Arrival</th>
-        <th>Price</th>
-        <th>Total Amount</th>
+        <th>Messages</th>
+       
     </tr>
     
     <?php
     // Include your database configuration file
-    include "../config.php";
+    require '../config.php';
 
     // Fetch products from the database
-    $sql = "SELECT * FROM order_info";
+    $sql = "SELECT * FROM concern";
     $result = mysqli_query($conn, $sql);
 
     // Check if there are any products
@@ -58,12 +54,8 @@
         while ($row = mysqli_fetch_assoc($result)) {
             echo "<tr>";
             echo "<td>" . $row["customer_id"] . "</td>";
-            echo "<td>" . $row["orders_id"] . "</td>";
-            echo "<td>" . $row["quantity"] . "</td>";
-            echo "<td>" . $row["date_ordered"] . "</td>";
-            echo "<td>" . $row["date_arrival"] . "</td>";
-            echo "<td>" . $row["price"] . "</td>";
-            echo "<td>" . $row["total_payment"] . "</td>";
+            echo "<td>" . $row["message"] . "</td>";
+          
             echo "</tr>";
         }
     } else {

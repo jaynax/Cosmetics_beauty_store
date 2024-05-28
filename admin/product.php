@@ -91,99 +91,102 @@
         <h2 style="color: black; ">Cosmetics Beauty Products</h2>
     </div>
 
-    <div class="featured-products">
+  </div>
+  <div class="featured-products">
+        <!-- Product 1 -->
         <div class="product">
             <img src="../img/beauty_1.jpg" alt="Product 1">
-            <h3>
-Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph</h3>
-            <p>$19.99</p>
-  
+            <p>Product ID: 1</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Set Fit Me 2 In 1 Face Powder & Liquid Foundation Xop Cosmetics Ph</h3>
+            <p>₱19.99</p>
+            
         </div>
 
+        <!-- Product 2 -->
         <div class="product">
-            <img src="../img/Lipstick.jpg" alt="Product 2">
-            <h3>12pcs Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss Beauty√</h3>
-            <p>$29.99</p>
-      
+            <img src="../img/g.jpg" alt="Product 2">
+            <p>Product ID: 2</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Waterproof Liquid Matte Lipstick Set Long Lasting Makeup Lip Gloss</h3>
+            <p>₱1,000.99</p>
+           
         </div>
 
         <div class="product">
             <img src="../img/makeup.jpg" alt="Product 3">
-            <h3>24Pc Makeup Set Kit for Women Makeup Gift Lip Gloss Concealer Eyeshadow Palette</h3>
-            <p>$24.99</p>
-        
+            <p>Product ID: 3</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">24Pc Makeup Set Kit for Women Makeup Gift Lip Gloss Concealer Eyeshadow Palette</h3>
+            <p> ₱24.99</p>
+           
         </div>
          <div class="product">
             <img src="../img/eye.jpg" alt="Product 3">
-            <h3>Maybelline New York Sky High Mascara
+            <p>Product ID: 4</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Maybelline New York Sky High Mascara
 </h3>
-            <p>$24.99</p>
+            <p> ₱34.99</p>
            
         </div>
         <div class="product">
             <img src="../img/blush.jpg" alt="Product 3">
-            <h3>FLOWER Beauty Blush Bomb - Bubbly</h3>
-            <p>$11.99</p>
+            <p>Product ID: 5</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">FLOWER Beauty Blush Bomb - Bubbly</h3>
+            <p> ₱11.99</p>
             
         </div>
            <div class="product">
             <img src="../img/cream.jpg" alt="Product 3">
-            <h3>Anti-Aging Cream</h3>
-            <p>$70.00</p>
-    
+            <p>Product ID: 6</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Anti-Aging Cream</h3>
+            <p> ₱70.00</p>
+          
         </div>
         <div class="product">
             <img src="../img/blush1.jpg" alt="Product 3">
-            <h3>e.l.f Monochromatic Multi-Stick</h3>
-            <p>$10.00</p>
-         
+            <p>Product ID: 7</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">e.l.f Monochromatic Multi-Stick</h3>
+            <p> ₱10.00</p>
+              
         </div>
         <div class="product">
             <img src="../img/nail.jpg" alt="Product 3">
-            <h3>MI FASHION 3D Shine Long Lasting Nail Polish Set Combo 15ml Each Pink, Wine Maroon, Tomato Red, Magenta (Pack of 4)</h3>
-            <p>$24.99</p>
+            <p>Product ID: 8</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">MI FASHION 3D Shine Long Lasting Nail Polish Set Combo 15ml Each Pink, Wine Maroon, Tomato Red, Magenta (Pack of 4)</h3>
+            <p> ₱24.99</p>
          
         </div>
         <div class="product">
             <img src="../img/sunscreen.jpg" alt="Product 3">
-            <h3>Lotus Herbals Safe Sun Invisible Matte Gel Sunscreen SPF 50 PA+++ , For Men & Women, Non-Greasy, Suitable for Oily Skin, 100g,Orange</h3>
-            <p>$24.99</p>
-           
-        </div>
-        <div class="product">
-            <img src="product3.jpg" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$24.99</p>
-      
-        </div><div class="product">
-            <img src="product3.jpg" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$24.99</p>
+            <p>Product ID: 9</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Lotus Herbals Safe Sun Invisible Matte Gel Sunscreen SPF 50 PA+++ , For Men & Women, Non-Greasy, Suitable for Oily Skin, 100g,Orange</h3>
+            <p> ₱24.99</p>
             
         </div>
-
         <div class="product">
-            <img src="product3.jpg" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$24.99</p>
-      
-        </div><div class="product">
-            <img src="product3.jpg" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$24.99</p>
+            <img src="../img/lip.jpg" alt="Product 3">
+            <p>Product ID: 10</p>
+            <h3>Ever Belina Lip and Cheek Roller</h3>
+            <p> ₱128.00</p>
+        
+    </div>
+        <div class="product">
+            <img src="../img/th.jpg" alt="Product 3">
+            <p>Product ID: 11</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Essence Extreme Shine Volume Lip gloss</h3>
+            <p> ₱188.29</p>
+            
+        </div>
+        <div class="product">
+            <img src="../img/d.jpg" alt="Product 3">
+            <p>Product ID: 12</p>
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Clinique Stay-Matte Oil-Free Makeup Foundation</h3>
+            <p> ₱2,699.37</p>
            
         </div>
         <div class="product">
             <img src="product3.jpg" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$24.99</p>
-      
-        </div>
-        <div class="product">
-            <img src="product3.jpg" alt="Product 3">
-            <h3>Product 3</h3>
-            <p>$24.99</p>
-        
+            <h3 style="color: black; font-family: cambria math, cambria, sans-serif;">Product 3</h3>
+            <p> ₱24.99</p>
+           
         </div>
     </div>
 
